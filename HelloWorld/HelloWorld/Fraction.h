@@ -17,4 +17,7 @@
 -(void) setDenominator:(int) d;
 -(int) numerator;
 -(int) denominator;
+-(void) setNumerator:(int)n andDenominator:(int)d;
+-(Fraction *) initWithNumerator:(int)n denominator:(int)d;
+
 @end

@@ -11,7 +11,7 @@
 @implementation Fraction
 
 -(void) print{
-    printf("%d/%d \n", numerator, denominator);
+    NSLog(@"%d/%d\n", numerator, denominator);
 }
 -(void) setNumerator:(int)n{
     numerator = n;
@@ -24,6 +24,17 @@
 }
 -(int) numerator {
     return numerator;
+}
+-(void) setNumerator:(int)n andDenominator:(int)d{
+    numerator = n;
+    denominator = d;
+}
+-(Fraction *)initWithNumerator:(int)n denominator:(int)d{
+    self = [super init];
+    if (self) {
+        [self setNumerator:n andDenominator:d];
+    }
+    return self;
 }
 
 @end
