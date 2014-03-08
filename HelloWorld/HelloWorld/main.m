@@ -19,7 +19,7 @@ int main(int argc, const char * argv[])
         [frac setNumerator:1];
         [frac setDenominator:3];
         
-        NSLog(@"The faraction is:");
+        NSLog(@"The faraction is new from copy:");
         [frac print];
         
     }
